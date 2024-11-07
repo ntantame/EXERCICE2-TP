@@ -1,0 +1,127 @@
+   /* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of viewport */
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;;
+}
+
+/* Card container */
+.section {
+    width: 90%; /* Adjust width for mobile */
+    max-width: 400px; /* Set a max width for larger screens */
+    text-align: center;
+    border-radius: 30px;
+    background-color: hsl(225, 100%, 98%);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Add shadow for effect */
+    overflow: hidden; /* Round corners for the image */
+    margin: 20px 0; /* Add top and bottom margin */
+}
+
+/* Responsive image */
+.MyImag img {
+    width: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+/* Title and text */
+.text {
+    padding: 20px;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: 1.5em;
+    color: hsl(223, 47%, 23%);
+}
+
+#P1 {
+    color: hsl(224, 23%, 55%);
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* Plan details */
+.aside {
+    border: 1px solid hsl(225, 100%, 94%);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.aside img {
+    width: 35px;
+    height: 40px;
+}
+
+#p2 {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: hsl(223, 47%, 23%);
+}
+
+a {
+    color: hsl(224, 89%, 41%);
+    font-size: 0.8em;
+}
+
+a:hover {
+    text-decoration: none;
+    color: hsl(223, 80%, 60%);
+}
+
+/* Button */
+#MyButton {
+    width: 80%;
+    margin: 20px auto;
+    padding: 12px 0;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+#MyButton:hover {
+    background-color: hsl(223, 80%, 60%);
+}
+
+/* Cancel text */
+.MonPg {
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.MonPg:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+/* Desktop styling */
+@media (min-width: 768px) {
+    body {
+        background-image: url("../images/pattern-background-desktop.svg");
+        background-position: top;
+        background-size: cover;
+    }
+
+    .section {
+        width: 400px; /* Increase width for larger screens */
+        margin: auto; /* Center card horizontally */
+    }
+}
